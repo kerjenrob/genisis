@@ -1,0 +1,28 @@
+.nav-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 1109px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+li {
+    display: inline;
+}
+.logo {
+    display: flex;
+    justify-self: flex-start;
+}
+.menu {
+    display: flex;
+    justify-content: end;
+}
