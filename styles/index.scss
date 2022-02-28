@@ -1,10 +1,21 @@
 @use 'fonts';
-@import '/styles/contacts.scss';
-@import '/styles/fonts.scss';
-@import '/styles/footer.scss';
-@import '/styles/header.scss';
-@import '/styles/home.scss';
+@import 'contacts';
+@import 'fonts';
+@import 'footer';
+@import 'header';
+@import 'home';
+@import 'projects';
+
+
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    background-color: #FFFFFF;
+}
+@mixin body ($property){
     display: flex;
     justify-content: center;
     align-items: center;
