@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;  /*varför funkar inte row*/
+    width: 1109px;
+}
+.logo {
+    display: flex;
+    justify-self: flex-start;
+    color: #111111;    
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+.margin {
+    margin-left: 20px;
+}

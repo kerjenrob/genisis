@@ -1,0 +1,16 @@
+/* move to header*/
+.header {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 1109px;
+}
+.logo {
+    display: flex;
+    justify-self: flex-start;
+    color: #111111;
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}

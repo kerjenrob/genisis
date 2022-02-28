@@ -1,0 +1,63 @@
+/*contacts scss*/
+
+.middle-section {
+    display: flex;
+    max-width: 1109px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.left-middle-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 445px;
+}
+.form {
+    display: flex;
+    justify-content: flex-start; /*Justify och align har bytt plats*/
+    flex-direction: column;
+    width: 475px;
+}/*
+.form {                     /*nesting or mixin
+    width: 475px;
+    height: 37px;
+    /*border-top: none;
+    border-left: none;
+    border-right: none;*/
+}
+.form_name {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:#111111;
+    width: 475px;
+    height: 17px;
+    }
+.form_email {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:#111111;
+    width: 475px;
+    height: 17px;
+}
+.form_message {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 475px;
+    height: 17px;
+}
+.form_button{
+    width: 125px;
+    height: 50px;
+    background-color: #4A4FF2;
+    border-color: #4A4FF2;
+    border-style: none;
+    color: white;
+}
+.map {
+    width: 1110px;
+    height: 570px;
+    margin-top: 120px;
+}

@@ -1,4 +1,9 @@
-
+@use 'fonts';
+@import '/styles/contacts.scss';
+@import '/styles/fonts.scss';
+@import '/styles/footer.scss';
+@import '/styles/header.scss';
+@import '/styles/home.scss';
 body {
     display: flex;
     justify-content: center;

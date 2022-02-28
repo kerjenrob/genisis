@@ -11,15 +11,15 @@
 
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="nav-header">
-            <ul class="logo">
-                <li><a href="/index.html"><h4>Genesis</h4></a></li>
-            </ul>
-            <ul class="menu">
-                <li><a href="/pages/projects.html"><h4>Projects</h4></a></li>
-                <li><a href="/pages/contact.html"><h4>Contact</h4></a></li>
-            </ul>
+            <div class="logo">
+                <a href="/index.html"><h4>Genesis</h4></a>
+            </div>
+            <div class="menu">
+                <a href="/pages/projects.html"><h4>Projects</h4></a>
+                <a class="margin" href="/pages/contact.html"><h4>Contact</h4></a>
+            </div>
         </nav>
     </header>
     <div class="middle-section">
@@ -29,9 +29,9 @@
         </div>
         <div class="form">
             <form action=""></form>
-            <input type="Name" title="Name" class="form-name" required autofokus>
-            <input type="Email" title="Email" class="form-email" required>
-            <textarea name="Message" title="Message" class="form-message" cols="30" rows="2"></textarea>
+            <input type="Name" title="Name" class="form_name" required autofokus>
+            <input type="Email" title="Email" class="form_email" required>
+            <textarea name="Message" title="Message" class="form_message" cols="30" rows="2"></textarea>
             <button type="submit" class="form-button" disabled>Submit</button>
         </div>
     </div> 
@@ -39,29 +39,23 @@
         <img src="/images/map.png" alt="map" text="map">
     </div>
     <footer> <!--footer-->
-        <div>
+        <div class="footer">
             <nav class="nav-header">
-                <ul class="logo">
-                    <li><a href="/pages/home.html"><h4>Genesis</h4></a></li>
-                </ul>
-                <ul class="menu-footer">
-                    <li><a href="/pages/projects.html"><h4>Projects</h4></a></li>
-                    <li><a href="/pages/contact.html"><h4>Contact</h4></a></li>
-                </ul>
-                    <li> <a href="https://dribbble.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li> <i class="fa-brands fa-instagram"></i></li>
-
-                </nav>
-
-            <ul>
-                <li> <i class="fa-brands fa-instagram"></i></li> 
-
-
-                <li> <link rel="stylesheet" href=><i class="fa-brands fa-dribbble"></i></li>
-                <li> <link rel="stylesheet" href="https://www.instagram.com/"></li>
-                <li> <link rel="stylesheet" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></li>
-            </ul>
+                <div class="logo">
+                    <a href="/index.html"><h4>Genesis</h4></a>
+                </div>
+                <div class="menu">
+                    <div>
+                    <a href="/pages/projects.html"><h4>Projects</h4></a>
+                    <a class="contact" href="/pages/contact.html"><h4>Contact</h4></a>
+                    <a class="margin" href="https://dribbble.com/"><i class="fa-brands fa-dribbble"></i></a>
+                    <a class="margin" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="margin" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                </div>
+            </nav>        
         </div>            
     </footer>
+    
 </body>
 </html>
