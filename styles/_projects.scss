@@ -79,3 +79,37 @@ main{
     background-color: #979797;
     color: #D8D8D8;
 }
+.projects-two {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1110px;
+}
+.woman-walking {
+    width: 1110px;
+    height: 660px;
+    margin-bottom: 25px;
+    margin-top: 61px;
+}
+.text-projects {
+    width: 1110px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.grid-container-projects-tree {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    column-gap: 30px;
+    row-gap: 20px;
+    width: 1110px;
+    height: 400px;
+}
+.gird_element_nineteen_p {
+    grid-column: 1/2;
+}
+.gird_element_twenty_p {
+    grid-column: 2/3;
+}
+.gird_element_twentyone_p {
+    grid-column: 3/4;
+}
