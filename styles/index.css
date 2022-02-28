@@ -7,6 +7,14 @@ body {
     max-width: 1200px;
     background-color: #FFFFFF;
 }
+@mixin body ($property){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    background-color: #FFFFFF;
+}
 main {
     display: flex;
     justify-content: center;

@@ -1,21 +1,81 @@
 @include body
-/*projects*/
-.grid-container-projects-one
-.gird_element_one_p
-.gird_element_two_p
-.gird_element_three_p
-.gird_element_four_p
-.gird_element_five_p
-.gird_element_six_p
-.gird_element_seven_p
-.gird_element_eight_p
-.gird_element_nine_p
-.gird_element_ten_p
-.gird_element_eleven_p
-.gird_element_twelve_p
-.gird_element_thirteen_p
-.gird_element_fourteen_p
-.gird_element_fifteen_p
-.gird_element_sixteen_p
-.gird_element_seventeen_p
-.gird_element_eighteen_p
+main{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+}
+.projects-one{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1110px;
+}
+.grid-container-projects-one{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6 2fr 1fr);
+    column-gap: 40px;
+    row-gap: 18px;
+    max-width: 335px;
+    max-height: 343px;
+}
+.grid_element_one_p {
+    grid-area: 1/1/3/2;
+}
+.grid_element_two_p {
+    grid-area: 1/2/3/3;
+}
+.grid_element_three_p {
+    grid-area: 3/1/4/3;
+}
+.grid_element_four_p {
+    grid-area: 4/1/6/2;
+}
+.grid_element_five_p {
+    grid-area: 4/2/6/3;
+}
+.grid_element_six_p {
+    grid-area: 6/1/7/3;
+}
+.grid_element_seven_p{
+    grid-area: 7/1/8/2;
+}
+.grid_element_eight_p{
+    grid-area: 7/2/8/3;
+}
+.grid_element_nine_p{
+    grid-area: 9/1/10/3;
+}
+.grid_element_ten_p{
+    grid-area: 10/1/11/2;
+}
+.grid_element_eleven_p{
+    grid-area: 10/2/11/3;
+}
+.grid_element_twelve_p{
+    grid-area: 12/1/13/3;
+}
+.grid_element_thirteen_p{
+    grid-area: 13/1/14/2;
+}
+.grid_element_fourteen_p{
+    grid-area: 13/2/14/3;
+}
+.grid_element_fifteen_p{
+    grid-area: 15/1/16/3;
+}
+.grid_element_sixteen_p{
+    grid-area: 16/1/17/2;
+}
+.grid_element_seventeen_p{
+    grid-area: 16/2/17/3;
+}
+.grid_element_eighteen_p{
+    grid-area: 18/1/19/3;
+}
+.middle-line {
+    width: 335px;
+    height: 1px;
+    background-color: #979797;
+    color: #D8D8D8;
+}
