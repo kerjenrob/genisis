@@ -1,14 +1,27 @@
-/* move to header*/
-.header {
+body {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    width: 1109px;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1200px;
+    background-color: #FFFFFF;
 }
-.logo {
+header {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.logo {         
     display: flex;
     justify-self: flex-start;
     color: #111111;
+}
+nav {
+    display: flex;
+    justify-self: end;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 1109px;
 }
 .menu {
     display: flex;

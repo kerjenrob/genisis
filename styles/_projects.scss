@@ -1,8 +1,16 @@
-@include body
-main{
+body {          /* why isn't the context in the centre*/
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     max-width: 1200px;
+    background-color: #FFFFFF;
+}
+
+/*main{
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;*/
 }
 .projects-one{
     display: flex;
