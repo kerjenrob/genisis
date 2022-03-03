@@ -1,30 +1,62 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 body {          /* why isn't the context in the centre*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 1200px;
     background-color: #FFFFFF;
 }
 /*top section*/
 .section-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 1110px;
 }
 .one-left {
     max-width: 635px;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 .one-left-head {
     color: #4A4FF2;
 }
 .one-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-items: flex-start;
-    flex-direction: column;
-    align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     width: 212px;
 }
 .line {
@@ -35,93 +67,153 @@ body {          /* why isn't the context in the centre*/
 }
 /* picture section*/
 .grid-container {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     width: 1110px;
     height: 1960px;
 }
 .grid-element-one {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     width: 357px;
     height: 413px;
 }
 .grid-element-two {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
     width: 356px;
     height: 351px;
 }
 .grid-element-tree {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-column: 3/4;
     width: 350px;
     height: 599px;
 }
 .grid-element-four {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     width: 357px;
     height: 475px;
 }
 .grid-element-five {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
     width: 350px;
     height: 413px;
 }
 .grid-element-six {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-column: 3/4;
     width: 357px;
     height: 413px;
 }
 .grid-element-seven {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     width: 357px;
     height: 475px;
 }
 .grid-element-eight {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
     width: 356px;
     height: 537px;
 }
 .grid-element-nine {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-column: 3/4;
     width: 357px;
     height: 537px;
 }
 .grid-element-ten {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     width: 357px;
     height: 537px;
 }
 .grid-element-eleven {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
     width: 356px;
     height: 599px;
 }
 .grid-element-twelve {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-column: 3/4;
     width: 350px;
     height: 351px;
 }
 /* third section*/
 .section-tree{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .grid-container-tree {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 2fr 70px 1fr 70px 1fr;
     grid-template-columns: 2fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     grid-gap: 70px;
     width: 100%;
     height: auto;
 }
+.grid-container-tree > *:nth-child(1) {
+          -ms-grid-row: 1;
+          -ms-grid-column: 1;
+}
+.grid-container-tree > *:nth-child(2) {
+          -ms-grid-row: 1;
+          -ms-grid-column: 3;
+}
+.grid-container-tree > *:nth-child(3) {
+          -ms-grid-row: 1;
+          -ms-grid-column: 5;
+}
 .grid-element-thirteen {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-area: 1/1/2/2;
 }
 .grid-element-fourteen {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 1/3/2/4;
 }
 .grid-element-fifteen{
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 1/4/2/5;
 }
 a:link {
@@ -139,72 +231,198 @@ ul {
 }
 /*fourth section*/
 .section-four {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .grid-container-four {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 2fr 70px 1fr 70px 1fr 70px 1fr;
     grid-template-columns: 2fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     grid-gap:70px;
     width: 100%;
     height: auto;
 }
+.grid-container-four > *:nth-child(1) {
+          -ms-grid-row: 1;
+          -ms-grid-column: 1;
+}
+.grid-container-four > *:nth-child(2) {
+          -ms-grid-row: 1;
+          -ms-grid-column: 3;
+}
+.grid-container-four > *:nth-child(3) {
+          -ms-grid-row: 1;
+          -ms-grid-column: 5;
+}
+.grid-container-four > *:nth-child(4) {
+          -ms-grid-row: 1;
+          -ms-grid-column: 7;
+}
 .grid-element-sixteen {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-area: 1/1/2/2;
 }
 .grid-element-seventeen {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 1/2/2/3;
 }
 .grid-element-eighteen {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 1/3/2/4;
 }
 .grid-element-nineteen {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 1/4/2/5;
 }
 .grid-element-twenty {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 2/2/3/3;
 }
 .grid-element-twentyone {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 2/3/3/4;
 }
 .grid-element-twentytwo {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 2/4/3/5;
 }
 /*start section five*/
 .section-five {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .grid-container-five {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 2fr 120px 1fr 120px 1fr 120px 1fr;
     grid-template-columns: 2fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 80px 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 120px;
+    -webkit-column-gap: 120px;
+       -moz-column-gap: 120px;
+            column-gap: 120px;
     row-gap: 80px; 
     width: 100%;
     height: auto;
 }
+.grid-container-five > *:nth-child(1) {
+          -ms-grid-row: 1;
+          -ms-grid-column: 1;
+}
+.grid-container-five > *:nth-child(2) {
+          -ms-grid-row: 1;
+          -ms-grid-column: 3;
+}
+.grid-container-five > *:nth-child(3) {
+          -ms-grid-row: 1;
+          -ms-grid-column: 5;
+}
+.grid-container-five > *:nth-child(4) {
+          -ms-grid-row: 1;
+          -ms-grid-column: 7;
+}
+.grid-container-five > *:nth-child(5) {
+          -ms-grid-row: 3;
+          -ms-grid-column: 1;
+}
+.grid-container-five > *:nth-child(6) {
+          -ms-grid-row: 3;
+          -ms-grid-column: 3;
+}
+.grid-container-five > *:nth-child(7) {
+          -ms-grid-row: 3;
+          -ms-grid-column: 5;
+}
+.grid-container-five > *:nth-child(8) {
+          -ms-grid-row: 3;
+          -ms-grid-column: 7;
+}
 .grid-element-twentytree {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-area: 1/1/2/2;
 }
 .grid-element-twentyfour {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 1/2/2/3;
 }
 .grid-element-twentyfive {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 1/3/2/4;
 }
 .grid-element-twentysix {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 1/4/2/5;
 }
 .grid-element-twentyseven {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-area: 2/2/3/3;
 }
 .grid-element-twentyeight {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-area: 2/3/3/4;
 }
 .grid-element-twentynine {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
     grid-area: 2/4/3/5;
 }
